@@ -28,7 +28,7 @@ export class CatalogoProveedoresComponent {
   llamarProveedores(){
     this.ProveedoresService.obtenerProveedores()
     .subscribe(data =>{
-      console.log(data.length);
+      console.log(data);
       this.listaProveedores = data;
       this.isLoading = false
 

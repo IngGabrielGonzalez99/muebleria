@@ -27,8 +27,8 @@
                   <td>{{p.telefono}}</td>
                   <td>{{p.direccion.calle}}</td>
                   <td>
-                    <button class="button button--primary m-2" value="{{p._id}}" (click)="navegarProveedor(p._id)">Actualizar</button>
-                    <button class="button button--secondary" value="{{p._id}}" (click)="eliminarProveedores(p._id)">Eliminar</button>
+                    <button class="button button--primary m-2" value="{{p._id}}" (click)="navegarProveedor(p._id.$oid)">Actualizar</button>
+                    <button class="button button--secondary" value="{{p._id}}" (click)="eliminarProveedores(p._id.$oid)">Eliminar</button>
                   </td>
   
   
